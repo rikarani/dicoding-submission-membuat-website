@@ -1,0 +1,188 @@
+:root {
+  --max-width: 60rem;
+  --px: 10px;
+  --py: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px/28px "Inter", sans-serif;
+  background-color: lightgray;
+}
+
+/* Header */
+header {
+  max-width: var(--max-width);
+  background-color: white;
+  padding: var(--py) var(--px);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header ul {
+  display: flex;
+  gap: 10px;
+}
+
+header ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  color: salmon;
+  /* padding: 4.5px; */
+}
+
+header ul:hover li {
+  filter: blur(5px);
+}
+
+header ul li:hover {
+  filter: blur(0px);
+}
+/* Header */
+
+/* Main */
+main {
+  max-width: var(--max-width);
+  background-color: white;
+}
+
+main .hero {
+  height: 230px;
+  background-color: black;
+  background-image: url(src/img/bg.png);
+  background-size: cover;
+  background-position: 0% 45%;
+  background-repeat: no-repeat;
+  border-top: 5px solid lightskyblue;
+  border-bottom: 5px solid red;
+}
+
+main .wrapper {
+  padding: var(--py) var(--px);
+}
+
+main .wrapper article h2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+main .wrapper h3 {
+  font-size: 11px;
+  margin-top: -5px;
+}
+
+main .wrapper article {
+  padding: 0 8px;
+}
+
+main .wrapper article h3 span a {
+  text-decoration: none;
+  color: black;
+}
+
+main .wrapper article p {
+  text-align: justify;
+  line-height: 26px;
+}
+
+main .wrapper article p.intro {
+  text-indent: 20px;
+  line-height: 26px;
+  font-size: 14px;
+}
+
+main .wrapper article h4 {
+  font-weight: bolder;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+main .wrapper article p.usage {
+  margin-top: 4px;
+}
+
+main .wrapper article ol li {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+main .wrapper aside {
+  display: none;
+}
+
+main .wrapper aside {
+  padding: 0 8px;
+}
+
+main .wrapper aside h4 {
+  font-weight: bolder;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+main .wrapper aside figure img {
+  width: 150px;
+  height: 150px;
+}
+
+main .wrapper aside figure figcaption h4.nama {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 4px;
+}
+/* Main */
+
+/* Footer */
+footer {
+  max-width: var(--max-width);
+  padding: var(--py) var(--px);
+  background-color: white;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+/* Footer */
+
+@media (min-width: 1024px) {
+  header {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main .wrapper {
+    display: flex;
+  }
+
+  main .wrapper article {
+    max-width: 70%;
+  }
+
+  main .wrapper aside {
+    display: block;
+  }
+
+  main .wrapper h3.author {
+    display: none;
+  }
+
+  footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
